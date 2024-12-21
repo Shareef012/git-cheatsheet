@@ -1,0 +1,53 @@
+what is Git and Github...?
+
+Git: 
+    -> Git is an open-source distributed version control system. It is designed to handle minor to major projects with high speed and efficiency. 
+Github
+    -> Github allows the users to host the git repositories Github is and online website.
+
+
+Why are we using Git and Github..?
+
+    -> By using the Git and Github we can do the version control easy.
+    -> We can see the changes made by a particular person at the particular point of time.
+
+Initializing the Git folders...?
+
+    -> navigate to the source folder then use the command "git init", these command is used to initialize the folder to the git repository.
+    -> After initializing the folder, we can see the .git folder in the source folder. These folder which is not visible to see that type of folder with .git use the command "ls -a".
+    -> The "git status" command will show the new file which is has been added new to the current version compared to the older version.
+    -> The untracked files i.e.,which are in color red when we use the "git status" we will see them. To convert the following files into the files which need to be added into the repository we need to use the command "git command <file_name>" 
+        git add <file_name> for adding the specific file into the repository or to add the all the files we need to use the "git add ." .
+    -> "git commit -m <message>" this command is used to commit the files into the repository by giving message.
+    -> "git restore --staged <file_name>" these file is used to rollback to the untracked file stage.
+    -> "git log" this command is used to show the no of commits are done by specific person at specific time.
+    -> "git reset <commit_id>" using this command we can go back to the specific id but no deleted files will be restored.
+    -> "git stash" by using this command we can temporarily copy the files into the it will delete all the files and store them. "git log" when we use this command it wouldn't show in the log.
+    -> "git stash pop" by using this command we can get the files from temporary space.
+    -> "git stash clear" by using this command we can delete all the files in the temporary space.
+    -> "git remote add origin <git_url>" in these step we are adding the attaching the folder to that URL.
+    -> "git remote -v " these command is used to show how many repositories that folder is attached.
+    -> "git push origin master" this command explains that we are pushing files in the folder/file into the repository we attached to that folder/file.
+    -> "git branch <branch_name>" this command is used to create a new branch.
+    -> "git commit" when we use this command the head pointer is moved to the new commit.
+    -> "git checkout <branch_name>" this command is used to switch the head pointer between the branches.
+    -> "git merge <branch_name>" used to merge the specific branch with the main branch.
+    -> We cannot make the changes in the some persons repository to do the changes we need to fork the repository into your account after forking we can do changes.
+    -> "git clone <git_url>" this is used download the specific repository from the Github to local file system.
+    -> "git push origin <branch_name> -f" this command is used when the commits are interlinked.
+    -> "git fetch --all --prune" this command is used to fetch the commits which are made by the people by doing fork.
+    -> "git reset --hard new_branch_name/main_branch" and "git push origin main" this two commands are used to doing replace the main branch with some user who made the changes.
+    -> "git pull upstream/main" is a command used to update your local repository with changes from the upstream repository's main branch.
+    -> "git push origin main" is a command used to sync the new_branch URL with the current main_branch URL.
+    -> "git rebase -i <commit_id>" this command will take you to the interactive envirnoment in this envirnoment we have so many options in that we have two option are pick and sqash(s):
+        the pick means it won't merge the commits. The sqash(s) means it will merge the commits into the previous commits.
+
+
+What is Pull Request..?
+
+    -> When a person is working on the something open source then you forked it and made the changes in it the you send a request to the 
+        repository holder to check the code and merge it with the main branch.
+
+
+Hosting the own project in the Github :
+
